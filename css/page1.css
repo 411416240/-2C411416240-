@@ -1,0 +1,75 @@
+/*
+=============== 
+Animation
+===============
+*/
+
+.animation {
+    font-size: 50px;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    height: 50vh;
+    align-items: center;
+    background-color: lightyellow;
+}
+
+
+/*
+=============== 
+Self
+===============
+*/
+
+.self {
+    text-align: left;
+    padding: 0 20%;
+    font-size: 50px;
+    line-height: 1.8;
+}
+
+.self .self-title {
+    font-size: 70px;
+    font-weight: bold;
+    border-bottom: 5px solid #FFDD17;
+}
+
+.self .self-subtitle {
+    font-weight: bold;
+}
+
+.self li {
+    padding: 30px;
+}
+
+/*
+=============== 
+Self introduction
+===============
+*/
+
+.self-intro {
+    background-color: rgb(240, 243, 244);
+    display: flex;
+    padding-left: 50px;
+}
+
+.self-intro .self-intro-title {
+    font-size: 70px;
+    font-weight: bold;
+    border-bottom: 5px solid #FFDD17;
+}
+
+.self-intro .self-intro-article {
+    font-size: 40px;
+    line-height: 1.8;
+    flex: 0 0 70%;
+}
+
+.self-intro .self-intro-img {
+    flex: 0 0 30%;
+    text-align: center;
+    justify-content: center;
+    padding-top: 70px;
+}
+

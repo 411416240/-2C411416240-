@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+      integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="../css/globle.css">
+    <link rel="stylesheet" href="../css/page4.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Reddit+Mono:wght@200..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>CV</title>
+  </head>
+  <body>
+    <!-- header -->
+    <section class="header">
+      <div class="nav">
+          <ul class="nav-item">
+              <li class="nav-header">
+                  <a href="../index.html"><img src="../image/name.png" alt="Home"width="200px" height="65px"></a>
+              </li>
+              <li class="nav-button nav-button-active">
+                  <a href="/page4/page4.html">CV</a>
+              </li>
+              <li class="nav-button">
+                  <a href="/page3/page3.html">Minigame</a>
+              </li>
+              <li class="nav-button">
+                  <a href="/page2/page2.html">Favorite</a>
+              </li>
+              <li class="nav-button">
+                  <a href="/page1/page1.html">About me</a>
+              </li>
+              <li class="nav-button">
+                  <a href="../index.html">Home</a>
+              </li>
+          </ul>
+      </div>
+  </section>
+  <!-- end of header -->
+
+
+
+
+
+      <section class="main">
+          <div class="left">
+              <div class="left-content">
+                  <div class="profile">
+                      <img src="../image/self-pic.png" alt="">
+                      <h2 class="name">Al Yu</h2>
+                      <p class="school">graduate in TKU</p>
+                  </div>
+                  <div class="skill">
+                      <h3 class="left-title">Skills</h3>
+                      <ul>
+                          <li>
+                              <p class="skill-bar">C/C++</p>
+                              <div class="bar">
+                                  <div class="progress c-bar"></div>
+                              </div>
+                          </li>
+                          <li>
+                              <p class="skill-bar">PHP</p>
+                              <div class="bar">
+                                  <div class="progress php-bar"></div>
+                              </div>
+                          </li>
+                          <li>
+                              <p class="skill-bar">HTML</p>
+                              <div class="bar">
+                                  <div class="progress html-bar"></div>
+                              </div>
+                          </li>
+                          <li>
+                              <p class="skill-bar">Javascript</p>
+                              <div class="bar">
+                                  <div class="progress js-bar"></div>
+                              </div>
+                          </li>
+                          <li>
+                            <p class="skill-bar">CSS</p>
+                            <div class="bar">
+                                <div class="progress css-bar"></div>
+                            </div>
+                        </li>
+                        <li>
+                          <p class="skill-bar">Lua</p>
+                          <div class="bar">
+                              <div class="progress lua-bar"></div>
+                          </div>
+                      </li>
+                      </ul>
+                  </div>
+                  <div class="contact">
+                      <h3 class="left-title">Contact</h3>
+                      <li>
+                          <i class="fa fa-phone"></i>
+                          0901-356 922
+                      </li>
+                      <li>
+                          <i class="fa fa-fax"></i>
+                          samyu3922@gmail.com
+                      </li>
+                      <li>
+                          <i class="fa fa-facebook"></i>
+                          www.facebook.com/kachun.yu.581/
+                      </li>
+                      <li>
+                          <i class="fa fa-instagram"></i>
+                          @help_help_ka_chun_foundation
+                      </li>
+                  </div>
+              </div>
+          </div>
+          <div class="right">
+              <div class="right-content">
+                  <div class="about-text">
+                    <section>
+                      <!-- section title -->
+                      <div class="section-title">
+                        <h2>My previous experiment</h2>
+                      </div>
+                      <!--end of section title -->
+                      <div class="services-center">
+                        <!-- single service -->
+                        <article class="service">
+                          <i class="fas fa-code service-icon"></i>
+                          <div class="counter" data-ceil="10">10</div>
+                          <h4>website made</h4>
+                        </article>
+                        <!-- end of single service -->
+                        <!-- single service -->
+                        <article class="service">
+                          <i class="fab fa-sketch service-icon"></i>
+                          <div class="counter" data-ceil="130">130</div>
+                          <h4>code competited</h4>
+                        </article>
+                        <!-- end of single service -->
+                        <!-- single service -->
+                        <article class="service">
+                          <i class="fab fa-android service-icon"></i>
+                          <div class="counter" data-ceil="7">7</div>
+                          <h4>app design</h4>
+                        </article>
+                        <!-- end of single service -->
+                        <script>
+                          const countersEl = document.querySelectorAll(".counter");
+
+countersEl.forEach((counterEl) => {
+  counterEl.innerText = "0";
+  incrementCounter();
+  function incrementCounter() {
+    let currentNum = +counterEl.innerText;
+    const dataCeil = counterEl.getAttribute("data-ceil");
+    const increment = dataCeil / 15;
+    currentNum = Math.ceil(currentNum + increment);
+
+    if (currentNum < dataCeil) {
+      counterEl.innerText = currentNum;
+      setTimeout(incrementCounter, 50);
+    } else {
+      counterEl.innerText = dataCeil;
+    }
+  }
+});
+                        </script>
+                      </div>
+                    </section>
+                  </div>
+              </div>
+          </div>
+      </section>
+
+
+
+  
+
+  <!-- footer -->
+  <section class="footer">
+    <div class="footer-icon">
+      <a href="https://www.instagram.com/help_help_ka_chun_foundation/" class="ig"><i class="fa-brands fa-instagram"></i></a>
+      <a href="https://www.facebook.com/kachun.yu.581/" class="fb"><i class="fa-brands fa-facebook"></i></a>
+      <a href="https://github.com/411416240" class="gh"><i class="fa-brands fa-github"></i></a>
+      <a href="https://www.youtube.com/channel/UCrZZbJnJmnXwCsUliu6v06g" class="yt"><i class="fa-brands fa-youtube"></i></a>
+    </div>
+    <div class="footer-info">
+      email:samyu3922@gmail.com <br>
+      phone:0901-356 922 <br>
+    </div>
+    <div class="footer-copyright">
+      Copyright&#169;AlYu2024
+    </div>
+  </section>
+ <!-- end of footer -->
+  </body>
+  </html>
+</html>

@@ -1,0 +1,153 @@
+
+/*
+=============== 
+Services
+===============
+*/
+.services-center .service {
+  background: white;
+  padding: 30px;
+  margin: 2rem;
+  width: 80%;
+  text-align: center;
+  border-radius: 0.5rem;
+  transition: all 0.3s linear;
+}
+.services-center .service:hover {
+  background-color: #FFDD17;
+  color: white;
+}
+.services-center .service:hover .underline {
+  background-color: white;
+}
+.services-center .service:hover p {
+  color: white;
+}
+.services-center .service-icon {
+  font-size: 2rem;
+  margin-bottom: 1.5rem;
+}
+
+/*
+=============== 
+resume
+===============
+*/
+.main {
+  min-height: 100vh;
+  width: 80%;
+  margin: 2rem auto;
+  display: grid;
+  grid-template-columns: 30fr 70fr;
+}
+
+.left {
+  background-color: rgb(32, 32, 70);
+  height: 100%;
+}
+
+.left-content {
+  padding: 2rem;
+}
+
+.profile img {
+  width: 100%;
+}
+
+.name {
+  font-size: 2rem;
+  color: white;
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  padding: 0.5rem 0;
+}
+
+.school {
+  font-size: 1.2rem;
+  color: rgb(178, 228, 104);
+  text-align: center;
+  letter-spacing: 1px;
+  padding-bottom: 1rem;
+}
+
+.left-title {
+  font-size: 1.8rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  color: white;
+  padding-top: 3rem;
+}
+
+.skill {
+  font-size: 0.7rem;
+  color: white;
+  padding-top: 3rem;
+}
+
+.bar {
+  width: 100%;
+  height: 0.5rem;
+  background-color: rgba(47, 129, 237, 0.3568627451);
+  position: relative;
+  border-radius: 12px;
+}
+
+.progress {
+  height: 100%;
+  position: absolute;
+  left: 0;
+  background-color: #2d9cdb;
+  border-radius: 12px;
+}
+
+.js-bar {
+  width: 70%;
+}
+
+.html-bar {
+  width: 100%;
+}
+
+.c-bar {
+  width: 90%;
+}
+
+.php-bar {
+  width: 80%;
+}
+
+.css-bar {
+  width: 70%;
+}
+
+.lua-bar {
+  width: 80%;
+}
+
+.contact {
+  padding: 1rem;
+  color: gray;
+  font-size: 0.5rem;
+  padding-top: 0.5rem;
+}
+
+.right {
+  width: 100%;
+  height: 100%;
+  background-color: wheat;
+}
+
+.right .right-content {
+  padding: 2rem 3rem;
+}
+
+.right .right-content .about-text {
+  color: black;
+  font-size: 1.1rem;
+  line-height: 1.5rem;
+}
+
+.section-title {
+  font-size: 40px;
+}

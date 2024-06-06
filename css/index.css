@@ -1,0 +1,159 @@
+/*
+=============== 
+Self
+===============
+*/
+.self {
+  margin: 5% 10%;
+  display: grid;
+  grid-template-columns: 70% 30%;
+}
+.self .self-body {
+  display: grid;
+  place-items: center;
+}
+.self .self-body h1 {
+  font-size: 80px;
+}
+.self .self-body h3 {
+  font-size: 50px;
+}
+
+.self .self-body .self-btn {
+  font-size: 10px;
+  display: flex;
+  justify-content: center;
+  border: 1 black solid;
+}
+.self .self-img {
+  display: block;
+  position: relative;
+}
+
+.self .self-pic {
+  max-width: 25rem;
+  max-height: 30rem;
+  object-fit: cover;
+  border-radius: 0.5rem;
+  position: relative;
+  border: 0.25rem solid #FFDD17;
+  border-radius: 0.5rem; 
+}
+
+.self .self-btn {
+  background-color: lightyellow;
+  padding: 20px 40px;
+  border-radius: 5px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  text-decoration: none;
+  color: black;
+  position: relative;
+  overflow: hidden;
+}
+
+.self .self-btn span {
+  position: relative;
+  z-index: 1;
+}
+
+.self .self-btn::before {
+  content: "";
+  position: absolute;
+  background-color: #FFDD17;
+  width: 0;
+  height: 0;
+  left: var(--xPos);
+  top: var(--yPos);
+  transform: translate(-50%, -50%);
+  border-radius: 50%;
+  transition: width 0.5s, height 0.5s;
+}
+
+.self .self-btn:hover::before {
+  width: 300px;
+  height: 300px;
+}
+
+/*
+=============== 
+Timeline
+===============
+*/
+.timeline {
+  background-color: rgb(240, 243, 244);
+  padding: 30px 0;
+}
+.timeline-center {
+  width: 80vw;
+  max-width: 40rem;
+  margin-left: auto;
+  margin-right: auto;
+}
+.timeline-title {
+  text-align: center;
+  font-size: 70px;
+  padding-bottom: 10px;
+}
+.timeline-title .timeline-underline {
+  border-bottom: 5px solid #FFDD17;
+  width: 300px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.timeline-item {
+  border-top: 2px dashed #FFDD17;
+  margin: 0;
+  padding: 4rem 2rem;
+  position: relative;
+}
+.timeline-item h4 {
+  padding-bottom: 5px;
+}
+.timeline-item:nth-child(even) {
+  border-left: 2px dashed #FFDD17;
+  border-top-left-radius: 2rem;
+  border-bottom-left-radius: 2rem;
+  margin-right: 2rem;
+  padding-right: 0;
+}
+.timeline-item:nth-child(even) .number {
+  left: 0;
+}
+.timeline-item:nth-child(odd) {
+  border-right: 2px dashed #FFDD17;
+  border-top-right-radius: 2rem;
+  border-bottom-right-radius: 2rem;
+  margin-left: 2rem;
+  padding-left: 0;
+}
+.timeline-item:nth-child(odd) .number {
+  right: 0;
+  -webkit-transform: translate(50%, -50%);
+  transform: translate(50%, -50%);
+}
+.timeline-item .number {
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  margin-bottom: 0;
+  background: #FFDD17;
+  width: 2rem;
+  height: 2rem;
+  border-radius: 50%;
+  display: grid;
+  place-items: center;
+  color: black;
+  font-weight: bold;
+}
+.timeline-item:first-child {
+  border-top: 0;
+  border-top-right-radius: 0;
+}
+.timeline-item:last-child {
+  border-bottom-left-radius: 0;
+}
+.timeline-item p {
+  margin-bottom: 0;
+}
+

@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+      integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="../css/globle.css">
+    <link rel="stylesheet" href="../css/page1.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Reddit+Mono:wght@200..900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Seymour+One&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>About me</title>
+</head>
+<body>
+    <!-- header -->
+    <section class="header">
+        <div class="nav">
+            <ul class="nav-item">
+                <li class="nav-header">
+                    <a href="../index.html"><img src="../image/name.png" alt="Home"width="200px" height="65px"></a>
+                </li>
+                <li class="nav-button">
+                    <a href="/page4/page4.html">CV</a>
+                </li>
+                <li class="nav-button">
+                    <a href="/page3/page3.html">Minigame</a>
+                </li>
+                <li class="nav-button">
+                    <a href="/page2/page2.html">Favorite</a>
+                </li>
+                <li class="nav-button nav-button-active">
+                    <a href="/page1/page1.html">About me</a>
+                </li>
+                <li class="nav-button">
+                    <a href="../index.html">Home</a>
+                </li>
+            </ul>
+        </div>
+    </section>
+    <!-- end of header -->
+
+    <!-- animation -->
+    <div class="animation"></div>
+    <script>
+        const animationEl = document.querySelector(".animation");
+        const careers = ["Gamer", "Student", "Developer"];
+        let careerIndex = 0;
+        let characterIndex = 0;
+
+        updateText();
+
+        function updateText() {
+            characterIndex++;
+            animationEl.innerHTML = `<h1>I am a ${careers[careerIndex].slice(0, characterIndex)}</h1>`;
+
+            if (characterIndex === careers[careerIndex].length) {
+                careerIndex++;
+                characterIndex = 0;
+            }
+
+            if (careerIndex === careers.length) {
+                careerIndex = 0;
+            }
+            setTimeout(updateText, 350);
+        }
+    </script>
+    <!-- end of animation -->
+    
+    <!-- self info -->
+    <section class="self">
+        <ul class="self-info">
+            <li class="self-title">
+                個人資料表
+            </li>
+            <li>
+                <div class="self-subtitle self-underline">姓名:</div>俞嘉俊
+            </li>
+            <li>
+                <div class="self-subtitle self-underline">性別：</div>男
+            </li>
+            <li>
+                <div class="self-subtitle self-underline">年齡：</div>21
+            </li>
+            <li>
+                <div class="self-subtitle self-underline">出生：</div>2003/09/22
+            </li>
+            <li>
+                <div class="self-subtitle self-underline">喜好/興趣：</div>遊戲、ASMR、哲學、貓、貓還有貓
+            </li>
+            <li>
+                <div class="self-subtitle self-underline">喜好音樂類型：</div>金屬搖滾、電音、Phonk
+            </li>
+            <li>
+                <div class="self-subtitle self-underline">喜好遊戲類型：</div>4X、FPS、TPS
+            </li>
+            <li>
+                <div class="self-subtitle self-underline">未來展望：</div>希望可以順利畢業，在畢業後如果可以考上研究院的話就上，如果不行的話希望在台灣找到適合的工作並長做以取得移民機會
+            </li>
+        </ul>
+        <div class="self-pic">
+            
+        </div>
+    </section>
+    <!-- end of self info -->
+
+    <!-- self introduce -->
+    <section class="self-intro">
+
+        <article class="self-intro-article">
+            <h1 class="self-intro-title">個人簡介</h1>
+            我是俞嘉俊，一位對資訊科技充滿熱情的學生。<br>
+            從我還是個孩子的時候，我就對電腦和科技充滿了好奇心。 我喜歡探索各種新的應用程序，研究它們是如何運作的，以及如何改進它們。 這種好奇心驅使我選擇了資訊科技作為我的學業方向。<br>
+            在大學裡，我學習了各種程式語言，包括HTML、CSS、C++、PHP、Lua和JavaScript。 我對演算法和資料結構有著深厚的興趣，並且樂於解決各種程式設計難題。 我也參加了一些項目，從中學到如何與團隊合作，如何有效地溝通，並學會了管理專案進度。<br>
+            除了編程，我對人工智慧、網路安全和資料科學等領域有著濃厚的興趣。 我相信，在不斷迭代的科技領域裡，持續學習和不斷進步是至關重要的。 因此，我積極參與各種技術講座、研討會和比賽，以保持自己的競爭力並不斷擴展自己的技能。<br>
+            在未來，我希望能夠將我的技術知識和創造力應用於實際問題的解決上，為社會帶來正面的影響。 我期待著在這個充滿挑戰和機會的領域中繼續成長和發展！<br>
+        </article>
+        <article class="self-intro-img">
+            <img src="../image/code-1.jpg" alt="" width="300px" height="650px">
+        </article>
+    </section>
+
+    <!-- end of self introduce -->
+
+    <!-- footer -->
+    <section class="footer">
+        <div class="footer-icon">
+          <a href="https://www.instagram.com/help_help_ka_chun_foundation/" class="ig"><i class="fa-brands fa-instagram"></i></a>
+          <a href="https://www.facebook.com/kachun.yu.581/" class="fb"><i class="fa-brands fa-facebook"></i></a>
+          <a href="https://github.com/411416240" class="gh"><i class="fa-brands fa-github"></i></a>
+          <a href="https://www.youtube.com/channel/UCrZZbJnJmnXwCsUliu6v06g" class="yt"><i class="fa-brands fa-youtube"></i></a>
+        </div>
+        <div class="footer-info">
+          email:samyu3922@gmail.com <br>
+          phone:0901-356 922 <br>
+        </div>
+        <div class="footer-copyright">
+          Copyright&#169;AlYu2024
+        </div>
+      </section>
+     <!-- end of footer -->
+</body>
+</html>

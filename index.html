@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+      integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="./css/globle.css">
+    <link rel="stylesheet" href="./css/index.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Reddit+Mono:wght@200..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Index</title>
+</head>
+<body>
+    <!-- header -->
+    <section class="header">
+        <div class="nav">
+            <ul class="nav-item">
+                <li class="nav-header">
+                  <a href="index.html"><img src="./image/name.png" alt="Home"width="200px" height="65px"></a>
+                </li>
+                <li class="nav-button">
+                  <a href="/page4/page4.html">CV</a>
+                </li>
+                <li class="nav-button">
+                  <a href="/page3/page3.html">Minigame</a>
+                </li>
+                <li class="nav-button">
+                  <a href="/page2/page2.html">Favorite</a>
+                </li>
+                <li class="nav-button">
+                  <a href="/page1/page1.html">About me</a>
+                </li>
+                <li class="nav-button nav-button-active">
+                  <a href="index.html">Home</a>
+                </li>
+            </ul>
+        </div>
+    </section>
+    <!-- end of header -->
+
+    <!-- self -->
+    <section class="self">
+      <article class="self-body">
+        <h1>HI, I`m AL YU</h1>
+        <h3>Full Time Student</h3>
+        <a href="./page1/page1.html" class="self-btn"><span>know more about me</span></a>
+        <script>
+          const btnEl = document.querySelector(".self-btn");
+
+          btnEl.addEventListener("mouseover", (event) => {
+            const x = event.pageX - btnEl.offsetLeft;
+            const y = event.pageY - btnEl.offsetTop;
+
+            btnEl.style.setProperty("--xPos", x + "px");
+            btnEl.style.setProperty("--yPos", y + "px");
+          });
+        </script>
+      </article>
+      <article class="self-img">
+        <img src="./image/self-pic.png" class="self-pic" alt="AL YU">
+      </article>
+    </section>
+    <!-- end of self -->
+
+    <!-- time line -->
+    <section class="timeline">
+      <!-- section title -->
+      <div class="timeline-title">
+        <h2>My Timeline of "Coding"</h2>
+        <div class="timeline-underline"></div>
+      </div>
+      <!--end of section title -->
+      <div class="timeline-center">
+        <!-- single timeline item -->
+        <article class="timeline-item">
+          <h4>2020</h4>
+          <p>
+            after wasting 4 years in collage, i realise i need to learn some skills, since i dont think im good at study
+          </p>
+          <span class="number"> 1 </span>
+        </article>
+        <!-- end of  single timeline item -->
+        <!-- single timeline item -->
+        <article class="timeline-item">
+          <h4>2021</h4>
+          <p>
+            I join a competition which about ai and driverless car, although we lose but I do learn some knowledge about ai, and I start having interest about computer
+          </p>
+          <span class="number"> 2 </span>
+        </article>
+        <!-- end of  single timeline item -->
+        <!-- single timeline item -->
+        <article class="timeline-item">
+          <h4>2021</h4>
+          <p>
+            After DSE, I found that I can't study in any university in Hong Kong, due to the really bad performance of mine in Chinese language, instead of retry DSE, I choose to study in Taiwan
+          </p>
+          <span class="number"> 3 </span>
+        </article>
+        <!-- end of  single timeline item -->
+        <!-- single timeline item -->
+        <article class="timeline-item">
+          <h4>2021</h4>
+          <p>
+            Despite Im studing Computer Science, but still, Im still feeling miserable about my future
+          </p>
+          <span class="number"> 4 </span>
+        </article>
+        <!-- end of  single timeline item -->
+        <!-- single timeline item -->
+        <article class="timeline-item">
+          <h4>2022</h4>
+          <p>
+            I found being a Full-Stack Developer can earn me a lot, so I finally find a target I can work for
+          </p>
+          <span class="number"> 5 </span>
+        </article>
+        <!-- end of  single timeline item -->
+        <!-- single timeline item -->
+        <article class="timeline-item">
+          <h4>further thought</h4>
+          <p>
+            I would like to be a Full-Stack Developer, now Im doing hard to complite the mission, wish me luck
+          </p>
+          <span class="number"> 6 </span>
+        </article>
+        <!-- end of  single timeline item -->
+      </div>
+    </section>
+    <!-- end of time line -->
+        
+   <!-- footer -->
+    <section class="footer">
+      <div class="footer-icon">
+        <a href="https://www.instagram.com/help_help_ka_chun_foundation/" class="ig"><i class="fa-brands fa-instagram"></i></a>
+        <a href="https://www.facebook.com/kachun.yu.581/" class="fb"><i class="fa-brands fa-facebook"></i></a>
+        <a href="https://github.com/411416240" class="gh"><i class="fa-brands fa-github"></i></a>
+        <a href="https://www.youtube.com/channel/UCrZZbJnJmnXwCsUliu6v06g" class="yt"><i class="fa-brands fa-youtube"></i></a>
+      </div>
+      <div class="footer-info">
+        email:samyu3922@gmail.com <br>
+        phone:0901-356 922 <br>
+      </div>
+      <div class="footer-copyright">
+        Copyright&#169;AlYu2024
+      </div>
+    </section>
+   <!-- end of footer -->
+    
+</body>
+</html>
